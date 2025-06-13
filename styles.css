@@ -1,0 +1,39 @@
+/* Skranji font */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Skranji:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Skranji', sans-serif, system-ui;
+}
+
+.main__container {
+    min-height: 100vh;
+    background: red;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.image__container {
+    background: green;
+}
+
+.background__image {
+    
+}
+
+.form__container {
+    background: blue;
+}
+
+
+@media (min-width: 576px){
+    .main__container {
+        
+    }
+}
+
