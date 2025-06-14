@@ -19,7 +19,26 @@ body {
 }
 
 .image__container {
-    background: green;
+    background-image: url("images/background-image.jpg");
+    background-size: cover;
+}
+
+.banner{
+    margin-top: 10rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.banner > h1{
+    letter-spacing: 0.2rem;
+}
+
+.icon {
+    height: 72px;
 }
 
 .background__image {
