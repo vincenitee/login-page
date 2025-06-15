@@ -19,14 +19,53 @@
                 <h1>ODIN</h1>
             </div>
 
-            <button>
-                
+            <button class="down__button hidden">
+                <span>Scroll down to register</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-chevrons-down">
+                    <polyline points="7 13 12 18 17 13"></polyline>
+                    <polyline points="7 6 12 11 17 6"></polyline>
+                </svg>
             </button>
         </div>
 
         <!-- Form Section -->
         <div class="form__container">
             
+            <form action="" method="post" class="registration__form">
+                <h3>Let's do this!</h3>
+
+                <div class="input__container">
+                    <label for="">FIRST NAME</label>
+                    <input type="text" name="first__name" id="first__name">
+                </div>
+
+                <div class="input__container">
+                    <label for="">LAST NAME</label>
+                    <input type="text" name="last__name" id="last__name" autocomplete="off">
+                </div>
+
+                <div class="input__container">
+                    <label for="">EMAIL</label>
+                    <input type="email" name="email" id="email" autocomplete="off">
+                </div>
+
+                <div class="input__container">
+                    <label for="">PHONE NUMBER</label>
+                    <input type="text" name="phone" id="phone" autocomplete="off">
+                </div>
+
+                <div class="input__container">
+                    <label for="">PASSWORD</label>
+                    <input type="password" name="password" id="password" autocomplete="off">
+                </div>
+
+                <div class="input__container">
+                    <label for="">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm__password" id="confirm__password" autocomplete="off">
+                </div>
+            </form>
         </div>
     </div>
 </body>
