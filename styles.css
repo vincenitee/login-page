@@ -31,6 +31,7 @@ body {
     position: relative;
     background-image: url("images/background-image.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 .banner {
@@ -79,13 +80,30 @@ body {
 }
 
 .background__image {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .form__container {
+    display: grid;
+    place-items: center;
+    justify-items: start;
+}
+
+.message__container {
+    padding: 0 2.5rem;
+    align-self: end;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.message__container > p { 
+    color: #3d3c3c;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 80%;
+    line-height: 1.1rem;
 }
 
 .registration__form{
@@ -96,7 +114,7 @@ body {
     gap: 1.2em;
     justify-content: start;
     grid-template-columns: repeat(2, 33%);
-    box-shadow: 0 3px 6px gray;
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / .1);
 }
 
 .registration__form > h3 {
@@ -127,6 +145,26 @@ body {
     outline: 1px solid var(--focused-outline);
 }
 
+.account__actions__container {
+    align-self: start;
+    padding: 0 2.5rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.account__actions__container > button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #779EA6;
+    color: #fff;
+    font-weight: 600;
+}
+
+.account__actions__container > span {
+    font-size: 0.9rem;
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(1.5rem);
@@ -150,6 +188,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    .main__container{
+        grid-template-columns: 1fr;
+        /* grid-template-rows: auto auto; */
+    }
+
     .registration__form {
         grid-template-columns: repeat(2, 1fr);
     }

@@ -31,14 +31,17 @@
         </div>
 
         <!-- Form Section -->
-        <div class="form__container">
-            
+        <div class="form__container">   
+            <div class="message__container">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Signup now to get started</p>
+                <p>You <i>know</i> you want to</p>
+            </div>
             <form action="" method="post" class="registration__form">
                 <h3>Let's do this!</h3>
 
                 <div class="input__container">
                     <label for="">FIRST NAME</label>
-                    <input type="text" name="first__name" id="first__name">
+                    <input type="text" name="first__name" id="first__name" autocomplete="off">
                 </div>
 
                 <div class="input__container">
@@ -66,6 +69,11 @@
                     <input type="password" name="confirm__password" id="confirm__password" autocomplete="off">
                 </div>
             </form>
+
+            <div class="account__actions__container">
+                <button id="create-btn">Create Account</button>
+                <span>Already have an account? Sign in</span>
+            </div>
         </div>
     </div>
 </body>
